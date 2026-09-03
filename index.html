@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lennoj — Jonnel Alday | OPM Singer, Rapper &amp; Songwriter from Caloocan</title>
+<meta name="description" content="Official site of Lennoj (Jonnel Alday) — OPM singer, rapper and songwriter from Bagong Barrio, Caloocan City, and member of Pieces Music. Stream Mi Amor, Bawal, Aking Sinta and more.">
+<meta name="keywords" content="Lennoj, Lennoj music, Jonnel Alday, Pieces Music, Mi Amor Lennoj, Bawal Lennoj, Aking Sinta, Ikaw at Ako, OPM rapper, Caloocan rapper">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lennoj.example.com/">
+<meta name="author" content="Jonnel Alday (Lennoj)">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Lennoj — Jonnel Alday | OPM Singer, Rapper &amp; Songwriter">
+<meta property="og:description" content="Official site of Lennoj — OPM singer, rapper and songwriter from Bagong Barrio, Caloocan City. Stream Mi Amor, Bawal, Aking Sinta and more.">
+<meta property="og:url" content="https://lennoj.example.com/">
+<meta property="og:site_name" content="Lennoj">
+<meta property="og:image" content="https://i.scdn.co/image/ab6761610000e5eb300f4e63dd6be5e0c45bdb87">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lennoj — Jonnel Alday | OPM Singer, Rapper &amp; Songwriter">
+<meta name="twitter:description" content="Stream Mi Amor, Bawal, Aking Sinta and more from Lennoj — OPM artist from Caloocan City.">
+<meta name="twitter:image" content="https://i.scdn.co/image/ab6761610000e5eb300f4e63dd6be5e0c45bdb87">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230D0D12%22/><text x=%2250%25%22 y=%2262%25%22 font-size=%2260%22 fill=%22%23E8A33D%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-weight=%22bold%22>L</text></svg>">
+
+<!-- Structured data: disambiguates the entity "Lennoj" for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Lennoj",
+  "alternateName": "Jonnel Alday",
+  "genre": ["OPM", "Filipino R&B", "Hip Hop"],
+  "url": "https://lennoj.example.com/",
+  "image": "https://i.scdn.co/image/ab6761610000e5eb300f4e63dd6be5e0c45bdb87",
+  "description": "Lennoj (Jonnel Alday) is an OPM singer, rapper and songwriter from Bagong Barrio, Caloocan City, Philippines, and a member of the Pieces Music collective.",
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Bagong Barrio, Caloocan City, Philippines"
+  },
+  "sameAs": [
+    "https://open.spotify.com/artist/3LBCT2Zpv6XbUWTdJ6kIRZ",
+    "https://www.youtube.com/@lennoj",
+    "https://facebook.com/itsyourboylennoj/"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0D0D12;
+    --surface:#15151D;
+    --surface2:#1D1D28;
+    --text:#F3F0EA;
+    --muted:#93909C;
+    --gold:#E8A33D;
+    --rose:#C6577A;
+    --violet:#8A5CF6;
+    --cyan:#4FD8E0;
+    --line: rgba(243,240,234,0.09);
+    --panel: rgba(21,21,29,0.55);
+    --maxw: 1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; background:var(--bg);}
+  body{
+    margin:0;
+    background:transparent;
+    color:var(--text);
+    font-family:'Work Sans', sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+    #disco-bg .light, #disco-bg .spin, .sparkle{display:none !important;}
+  }
+
+  /* ---------- DISCO BACKGROUND (fixed, sits behind every section) ---------- */
+  #disco-bg{
+    position:fixed; inset:0; z-index:-2; overflow:hidden; background:var(--bg);
+  }
+  #disco-bg .light{
+    position:absolute; width:46vw; height:46vw; border-radius:50%;
+    filter:blur(70px); mix-blend-mode:screen; opacity:0.5; will-change:transform;
+    animation:discoMove 22s ease-in-out infinite;
+  }
+  #disco-bg .light.l1{background:var(--gold); top:-10%; left:-8%; animation-duration:19s;}
+  #disco-bg .light.l2{background:var(--rose); top:20%; right:-14%; animation-duration:24s; animation-delay:-4s;}
+  #disco-bg .light.l3{background:var(--violet); bottom:-16%; left:12%; animation-duration:27s; animation-delay:-9s;}
+  #disco-bg .light.l4{background:var(--cyan); bottom:-10%; right:8%; width:34vw; height:34vw; animation-duration:21s; animation-delay:-13s;}
+  @keyframes discoMove{
+    0%{transform:translate(0,0) scale(1);}
+    25%{transform:translate(12vw,8vh) scale(1.15);}
+    50%{transform:translate(-6vw,14vh) scale(0.9);}
+    75%{transform:translate(9vw,-10vh) scale(1.08);}
+    100%{transform:translate(0,0) scale(1);}
+  }
+  #disco-bg .spin{
+    position:absolute; inset:-60%;
+    background:conic-gradient(from 0deg,
+      transparent 0deg, rgba(232,163,61,0.14) 25deg, transparent 55deg,
+      rgba(198,87,122,0.13) 130deg, transparent 165deg,
+      rgba(79,216,224,0.11) 230deg, transparent 265deg,
+      rgba(138,92,246,0.12) 320deg, transparent 350deg);
+    mix-blend-mode:screen;
+    animation:spinSlow 50s linear infinite;
+  }
+  @keyframes spinSlow{ to{ transform:rotate(360deg); } }
+  #disco-bg .scrim{
+    position:absolute; inset:0;
+    background:radial-gradient(ellipse 80% 60% at 50% 0%, transparent 0%, rgba(13,13,18,0.55) 75%);
+  }
+  .sparkle{
+    position:absolute; border-radius:50%; background:#fff;
+    box-shadow:0 0 6px 1px rgba(255,255,255,0.8);
+    animation-name:twinkle; animation-timing-function:ease-in-out; animation-iteration-count:infinite;
+  }
+  @keyframes twinkle{
+    0%,100%{opacity:0; transform:scale(0.4);}
+    50%{opacity:0.9; transform:scale(1);}
+  }
+  h1,h2,h3{
+    font-family:'Anton', sans-serif;
+    font-weight:400;
+    letter-spacing:0.01em;
+    margin:0;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+  section{position:relative;}
+
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:3px;
+  }
+
+  /* ---------- NAV ---------- */
+  .topnav{
+    position:fixed; top:0; left:0; right:0; z-index:50;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 28px;
+    background:linear-gradient(to bottom, rgba(13,13,18,0.65), transparent);
+  }
+  .topnav .mark{font-family:'Anton',sans-serif; font-size:1.3rem; letter-spacing:0.02em;}
+  .topnav .links{display:flex; gap:22px; font-size:0.85rem;}
+  .topnav .links a{text-decoration:none; color:var(--muted); border-bottom:1px solid transparent; padding-bottom:2px; transition:color .2s, border-color .2s;}
+  .topnav .links a:hover{color:var(--text); border-color:var(--gold);}
+  @media (max-width:640px){ .topnav .links{display:none;} }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:100svh;
+    display:flex; flex-direction:column; justify-content:center;
+    padding:120px 28px 80px;
+    background:linear-gradient(180deg, rgba(13,13,18,0.25), rgba(13,13,18,0.7));
+    overflow:hidden;
+    perspective:1200px;
+  }
+  .hero-orb-wrap{
+    position:absolute; z-index:0; pointer-events:none;
+    width:min(46vw,420px); aspect-ratio:1;
+    top:14%; right:6%;
+    will-change:transform;
+    transition:transform .2s ease-out;
+  }
+  .hero-orb{
+    width:100%; height:100%; border-radius:50%;
+    background:
+      radial-gradient(circle at 35% 30%, rgba(255,255,255,0.55), transparent 40%),
+      conic-gradient(from 0deg, var(--gold), var(--rose), var(--violet), var(--cyan), var(--gold));
+    opacity:0.35; filter:blur(1px) saturate(1.3);
+    animation:orbSpin 26s linear infinite;
+    -webkit-mask-image:radial-gradient(circle, black 60%, transparent 72%);
+    mask-image:radial-gradient(circle, black 60%, transparent 72%);
+  }
+  @keyframes orbSpin{ to{ transform:rotate(360deg); } }
+  @media (max-width:760px){ .hero-orb-wrap{display:none;} }
+  .hero-beams{
+    position:absolute; inset:0; z-index:0; opacity:0.5; pointer-events:none;
+  }
+  .hero-beams span{
+    position:absolute; width:1px; height:140%; top:-20%;
+    background:linear-gradient(to bottom, transparent, rgba(232,163,61,0.35), transparent);
+    animation:drift 9s ease-in-out infinite;
+  }
+  .hero-beams span:nth-child(1){left:12%; animation-delay:0s;}
+  .hero-beams span:nth-child(2){left:38%; animation-delay:1.4s; background:linear-gradient(to bottom, transparent, rgba(198,87,122,0.3), transparent);}
+  .hero-beams span:nth-child(3){left:66%; animation-delay:2.8s;}
+  .hero-beams span:nth-child(4){left:88%; animation-delay:0.7s; background:linear-gradient(to bottom, transparent, rgba(198,87,122,0.25), transparent);}
+  @keyframes drift{
+    0%,100%{transform:translateY(0); opacity:0.3;}
+    50%{transform:translateY(30px); opacity:0.8;}
+  }
+
+  .hero-inner{position:relative; z-index:1; max-width:var(--maxw); margin:0 auto; width:100%;}
+  .hero-loc{
+    font-size:0.85rem; color:var(--muted); letter-spacing:0.03em;
+    margin-bottom:18px;
+    opacity:0; animation:fadeIn .8s ease forwards 1.1s;
+  }
+  .hero h1{
+    font-size:clamp(4.2rem, 15vw, 10.5rem);
+    line-height:0.86;
+    color:var(--text);
+    overflow:hidden;
+  }
+  .hero h1 .reveal{
+    display:inline-block;
+    transform:translateY(110%);
+    animation:riseUp .85s cubic-bezier(.2,.8,.2,1) forwards;
+  }
+  .hero h1 .reveal:nth-child(1){animation-delay:.1s;}
+  .hero h1 .reveal:nth-child(2){animation-delay:.22s;}
+  .hero h1 .reveal:nth-child(3){animation-delay:.34s;}
+  .hero h1 .reveal:nth-child(4){animation-delay:.46s;}
+  .hero h1 .reveal:nth-child(5){animation-delay:.58s;}
+  .hero h1 .reveal:nth-child(6){animation-delay:.7s;}
+  @keyframes riseUp{ to{ transform:translateY(0); } }
+
+  .hero-sub{
+    margin-top:22px; max-width:520px; color:var(--muted); font-size:1.05rem;
+    opacity:0; animation:fadeIn .8s ease forwards 1s;
+  }
+  .hero-sub strong{color:var(--text); font-weight:600;}
+  @keyframes fadeIn{ to{opacity:1;} }
+
+  .hero-stats{
+    display:flex; gap:36px; margin-top:44px; flex-wrap:wrap;
+    opacity:0; animation:fadeIn .8s ease forwards 1.25s;
+  }
+  .hero-stats .n{font-family:'Anton',sans-serif; font-size:1.7rem; color:var(--gold);}
+  .hero-stats .l{font-size:0.78rem; color:var(--muted); margin-top:2px;}
+
+  .hero-cta{
+    display:flex; gap:14px; margin-top:44px; flex-wrap:wrap;
+    opacity:0; animation:fadeIn .8s ease forwards 1.4s;
+  }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:13px 22px; border-radius:2px;
+    font-size:0.88rem; font-weight:600; text-decoration:none;
+    border:1px solid var(--line);
+    transition:transform .18s ease, border-color .18s ease, background .18s ease;
+  }
+  .btn:hover{transform:translateY(-2px); border-color:var(--gold);}
+  .btn.primary{background:var(--gold); color:#0D0D12; border-color:var(--gold);}
+  .btn.primary:hover{background:#f0b352;}
+
+  /* ---------- NOW PLAYING (Spotify embed) ---------- */
+  .player-wrap{
+    background:var(--panel); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+    border:1px solid var(--line); padding:8px; overflow:hidden;
+  }
+  .player-wrap iframe{ display:block; width:100%; border:0; }
+  .player-note{ margin-top:16px; color:var(--muted); font-size:0.85rem; }
+
+  /* ---------- SECTION HEADERS ---------- */
+  .sec{padding:110px 0;}
+  .sec-head{margin-bottom:56px; max-width:640px;}
+  .sec-head h2{font-size:clamp(2.2rem,5vw,3.4rem); line-height:1;}
+  .sec-head p{color:var(--muted); margin-top:16px; font-size:1.02rem;}
+  .divider{height:1px; background:var(--line); width:100%;}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{
+    display:grid; grid-template-columns:0.9fr 1.4fr; gap:64px; align-items:start;
+    perspective:1000px;
+  }
+  .stat-grid, .chart, .chip-grid{ perspective:1000px; }
+  @media (max-width:760px){ .about-grid{grid-template-columns:1fr;} }
+  .about-photo{
+    aspect-ratio:4/5; background:var(--surface); border:1px solid var(--line);
+    background-image:url('https://i.scdn.co/image/ab67616100005174300f4e63dd6be5e0c45bdb87');
+    background-size:cover; background-position:center top;
+    position:relative;
+    transition:transform .12s ease-out; will-change:transform;
+  }
+  .about-photo::after{
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(180deg, transparent 55%, rgba(13,13,18,0.85));
+  }
+  .about-photo .cap{
+    position:absolute; bottom:14px; left:16px; z-index:1;
+    font-size:0.78rem; color:var(--muted);
+  }
+  .about-copy p{margin:0 0 18px; color:#D9D6D0; font-size:1.05rem; max-width:60ch;}
+  .about-copy .crew{
+    margin-top:28px; padding-top:24px; border-top:1px solid var(--line);
+  }
+  .crew-label{font-size:0.8rem; color:var(--muted); margin-bottom:10px;}
+  .crew-names{display:flex; flex-wrap:wrap; gap:10px;}
+  .crew-names span{
+    font-size:0.85rem; padding:7px 13px; border:1px solid var(--line); color:var(--text);
+  }
+
+  /* ---------- STATS INFOGRAPHIC ---------- */
+  .stat-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+    background:var(--line); border:1px solid var(--line);
+  }
+  @media (max-width:760px){ .stat-grid{grid-template-columns:repeat(2,1fr);} }
+  .stat-card{
+    background:var(--panel); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+    padding:36px 26px;
+    transform-style:preserve-3d; will-change:transform;
+    transition:transform .12s ease-out;
+  }
+  .stat-card .num{
+    font-family:'Anton',sans-serif; font-size:clamp(2.1rem,4vw,3rem); color:var(--text);
+  }
+  .stat-card .num .unit{font-size:0.5em; color:var(--gold); margin-left:4px;}
+  .stat-card .lab{font-size:0.82rem; color:var(--muted); margin-top:8px;}
+
+  /* ---------- DISCOGRAPHY BAR CHART ---------- */
+  .chart{margin-top:8px;}
+  .bar-row{
+    display:grid; grid-template-columns:52px 150px 1fr 90px; align-items:center; gap:16px;
+    padding:16px 0; border-bottom:1px solid var(--line);
+  }
+  @media (max-width:640px){
+    .bar-row{grid-template-columns:40px 1fr; gap:10px 14px; padding:18px 0;}
+    .bar-row .bar-track{grid-column:1/-1;}
+    .bar-row .bar-num{order:3; text-align:left; grid-column:2/3;}
+  }
+  .bar-cover{
+    width:52px; height:52px; object-fit:cover; border:1px solid var(--line);
+    background:var(--surface);
+  }
+  .bar-row .bar-title{font-weight:600; font-size:0.98rem;}
+  .bar-row .bar-title .yr{color:var(--muted); font-weight:400; font-size:0.82rem; display:block; margin-top:2px;}
+  .bar-track{
+    height:10px; background:var(--panel); position:relative; overflow:hidden;
+  }
+  .bar-row{transition:transform .12s ease-out; will-change:transform;}
+  .bar-fill{
+    position:absolute; left:0; top:0; bottom:0; width:0%;
+    background:linear-gradient(90deg, var(--rose), var(--gold));
+    transition:width 1.1s cubic-bezier(.2,.7,.2,1);
+  }
+  .bar-num{font-family:'Anton',sans-serif; font-size:1.05rem; text-align:right; color:var(--gold);}
+
+  /* ---------- TIMELINE ---------- */
+  .timeline{border-left:1px solid var(--line); margin-left:6px;}
+  .tl-item{
+    position:relative; padding:0 0 40px 32px;
+  }
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:''; position:absolute; left:-5.5px; top:4px;
+    width:10px; height:10px; border-radius:50%;
+    background:var(--gold); box-shadow:0 0 0 4px var(--bg), 0 0 0 5px var(--line);
+  }
+  .tl-year{font-family:'Anton',sans-serif; color:var(--gold); font-size:1rem;}
+  .tl-title{font-size:1.15rem; font-weight:600; margin-top:4px;}
+  .tl-type{color:var(--muted); font-size:0.85rem; margin-top:2px;}
+
+  /* ---------- APPEARS ON ---------- */
+  .chip-grid{display:flex; flex-wrap:wrap; gap:12px;}
+  .chip{
+    padding:12px 18px; border:1px solid var(--line); font-size:0.92rem;
+    background:var(--panel); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    transition:border-color .18s, transform .12s ease-out;
+    will-change:transform;
+  }
+  .chip:hover{border-color:var(--rose);}
+
+  /* ---------- FOLLOW / FOOTER ---------- */
+  .follow{
+    padding:110px 0 60px; text-align:center;
+    border-top:1px solid var(--line);
+  }
+  .follow h2{font-size:clamp(2.4rem,7vw,4.6rem); line-height:1;}
+  .follow p{color:var(--muted); margin:18px auto 0; max-width:460px;}
+  .follow .hero-cta{justify-content:center; margin-top:38px;}
+  footer{
+    padding:28px; text-align:center; color:var(--muted); font-size:0.8rem;
+    border-top:1px solid var(--line);
+    background:rgba(13,13,18,0.55);
+  }
+  footer a{color:var(--muted); text-decoration:underline;}
+
+  /* generic scroll-reveal for data elements only */
+  .reveal-on-scroll{opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease;}
+  .reveal-on-scroll.in{opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<div id="disco-bg" aria-hidden="true">
+  <div class="light l1"></div>
+  <div class="light l2"></div>
+  <div class="light l3"></div>
+  <div class="light l4"></div>
+  <div class="spin"></div>
+  <div id="sparkle-layer"></div>
+  <div class="scrim"></div>
+</div>
+
+<nav class="topnav">
+  <div class="mark">LENNOJ</div>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#discography">Discography</a>
+    <a href="#releases">Releases</a>
+    <a href="#listen">Listen</a>
+  </div>
+</nav>
+
+<header class="hero" id="hero-tilt">
+  <div class="hero-beams" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <div class="hero-orb-wrap" id="hero-orb-wrap" aria-hidden="true"><div class="hero-orb"></div></div>
+  <div class="hero-inner">
+    <div class="hero-loc">Bagong Barrio, Caloocan City, Philippines</div>
+    <h1 aria-label="Lennoj">
+      <span class="reveal">L</span><span class="reveal">E</span><span class="reveal">N</span><span class="reveal">N</span><span class="reveal">O</span><span class="reveal">J</span>
+    </h1>
+    <p class="hero-sub">
+      <strong>Jonnel Alday</strong> — singer, rapper, and songwriter writing Tagalog love songs
+      for people who read text messages twice. Member of the Pieces Music collective.
+    </p>
+    <div class="hero-stats">
+      <div><div class="n">6.1K</div><div class="l">Monthly listeners</div></div>
+      <div><div class="n">2,010</div><div class="l">Followers</div></div>
+      <div><div class="n">8</div><div class="l">Releases since 2022</div></div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn primary" href="https://open.spotify.com/artist/3LBCT2Zpv6XbUWTdJ6kIRZ" target="_blank" rel="noopener">Play on Spotify</a>
+      <a class="btn" href="https://www.youtube.com/@lennoj" target="_blank" rel="noopener">Watch on YouTube</a>
+      <a class="btn" href="https://facebook.com/itsyourboylennoj/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="sec" id="listen" style="padding-top:70px;">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Now playing</h2>
+        <p>Real playback via Spotify — press play to hear "Mi Amor," Lennoj's most-streamed track, or browse his full catalog below.</p>
+      </div>
+      <div class="player-wrap">
+        <iframe title="Lennoj — Mi Amor on Spotify" src="https://open.spotify.com/embed/album/29IK8QN1j9Rg4dIyNinTdg?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="player-wrap" style="margin-top:14px;">
+        <iframe title="Lennoj — full artist profile on Spotify" src="https://open.spotify.com/embed/artist/3LBCT2Zpv6XbUWTdJ6kIRZ?utm_source=generator&theme=0" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <p class="player-note">Playback is powered by Spotify's official embedded player, so streams count toward Lennoj's real numbers.</p>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+  <section class="sec" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-photo" role="img" aria-label="Lennoj artist photo">
+          <div class="cap">Lennoj — official artist photo</div>
+        </div>
+        <div class="about-copy">
+          <h2 style="font-size:clamp(1.8rem,4vw,2.6rem); margin-bottom:22px;">About Lennoj</h2>
+          <p>Jonnel Alday, known onstage as <strong>Lennoj</strong>, grew up in Bagong Barrio, Caloocan City, and turned that neighborhood's mix of hip-hop cadence and OPM balladry into his own sound — rap verses that soften into sung hooks about love, distance, and the people who stayed.</p>
+          <p>Since his 2022 debut single "Telenobela," Lennoj has built a catalog centered on Tagalog storytelling: "Mi Amor" became his breakout, and follow-ups like "Bawal," "Kase Mahal Kita," and "Aking Sinta" carried the same intimate, conversational delivery to a growing audience on Spotify and YouTube.</p>
+          <div class="crew">
+            <div class="crew-label">Pieces Music collective</div>
+            <div class="crew-names">
+              <span>Lennoj</span><span>Dro Perez</span><span>Hey Its Je</span><span>Nck Deezy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>By the numbers</h2>
+        <p>Lennoj's Spotify footprint, in one glance.</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-card"><div class="num">6.1<span class="unit">K</span></div><div class="lab">Monthly listeners</div></div>
+        <div class="stat-card"><div class="num">2,010</div><div class="lab">Spotify followers</div></div>
+        <div class="stat-card"><div class="num">621<span class="unit">K</span></div><div class="lab">Streams on "Mi Amor"</div></div>
+        <div class="stat-card"><div class="num">8</div><div class="lab">Appears-on features</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+  <section class="sec" id="discography">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Most-streamed tracks</h2>
+        <p>Ranked by Spotify streams — this is where new listeners usually start.</p>
+      </div>
+      <div class="chart" id="chart">
+        <!-- rows injected/animated via JS using data-value -->
+        <div class="bar-row">
+          <img class="bar-cover" src="https://i.scdn.co/image/ab67616d00004851efb446a02eb873d168ca2dcd" alt="Mi Amor cover art" loading="lazy">
+          <div class="bar-title">Mi Amor<span class="yr">Single · 2022</span></div>
+          <div class="bar-track"><div class="bar-fill" data-value="100"></div></div>
+          <div class="bar-num">621,626</div>
+        </div>
+        <div class="bar-row">
+          <img class="bar-cover" src="https://i.scdn.co/image/ab67616d000048513675bb76551aea50551d1317" alt="Bawal cover art" loading="lazy">
+          <div class="bar-title">Bawal<span class="yr">Single</span></div>
+          <div class="bar-track"><div class="bar-fill" data-value="26.5"></div></div>
+          <div class="bar-num">164,718</div>
+        </div>
+        <div class="bar-row">
+          <img class="bar-cover" src="https://i.scdn.co/image/ab67616d00004851d39b2ade759c1939415071b8" alt="Kase Mahal Kita cover art" loading="lazy">
+          <div class="bar-title">Kase Mahal Kita<span class="yr">Single</span></div>
+          <div class="bar-track"><div class="bar-fill" data-value="4.8"></div></div>
+          <div class="bar-num">29,997</div>
+        </div>
+        <div class="bar-row">
+          <img class="bar-cover" src="https://i.scdn.co/image/ab67616d0000485172ab4504939634f673d2a0c3" alt="Aking Sinta cover art" loading="lazy">
+          <div class="bar-title">Aking Sinta<span class="yr">Single · 2024</span></div>
+          <div class="bar-track"><div class="bar-fill" data-value="4.3"></div></div>
+          <div class="bar-num">26,518</div>
+        </div>
+        <div class="bar-row">
+          <img class="bar-cover" src="https://i.scdn.co/image/ab67616d00004851b99c8586cb485024890e6967" alt="Ikaw at Ako cover art" loading="lazy">
+          <div class="bar-title">Ikaw at Ako<span class="yr">Single · 2024</span></div>
+          <div class="bar-track"><div class="bar-fill" data-value="1.4"></div></div>
+          <div class="bar-num">8,950</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+  <section class="sec" id="releases">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Release timeline</h2>
+        <p>Every single, EP, and album Lennoj has put out since debuting in 2022.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-year">2025</div><div class="tl-title">Salamisim (Reimagined)</div><div class="tl-type">EP</div></div>
+        <div class="tl-item"><div class="tl-year">2024</div><div class="tl-title">Aking Sinta</div><div class="tl-type">Single / Album</div></div>
+        <div class="tl-item"><div class="tl-year">2024</div><div class="tl-title">Ikaw at Ako</div><div class="tl-type">Single / Album</div></div>
+        <div class="tl-item"><div class="tl-year">2024</div><div class="tl-title">Pagtingin</div><div class="tl-type">Single / Album</div></div>
+        <div class="tl-item"><div class="tl-year">2024</div><div class="tl-title">Salamat</div><div class="tl-type">Single</div></div>
+        <div class="tl-item"><div class="tl-year">2023</div><div class="tl-title">Bilis ng Panahon</div><div class="tl-type">Single</div></div>
+        <div class="tl-item"><div class="tl-year">2022</div><div class="tl-title">Mi Amor</div><div class="tl-type">Single / Album — breakout track</div></div>
+        <div class="tl-item"><div class="tl-year">2022</div><div class="tl-title">Telenobela</div><div class="tl-type">Debut single</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Appears on</h2>
+        <p>Collaborations and features across the Pieces Music circle.</p>
+      </div>
+      <div class="chip-grid">
+        <span class="chip">Paumaga</span>
+        <span class="chip">MC</span>
+        <span class="chip">Tinatangi</span>
+        <span class="chip">Sólo tu</span>
+        <span class="chip">XO Season</span>
+        <span class="chip">Pinay Na Cutie</span>
+        <span class="chip">BAWAL</span>
+        <span class="chip">The Come Back Is Real</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="follow" id="follow">
+    <div class="wrap">
+      <h2>Listen to Lennoj</h2>
+      <p>New Lennoj music lands first on Spotify and YouTube. Follow along.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="https://open.spotify.com/artist/3LBCT2Zpv6XbUWTdJ6kIRZ" target="_blank" rel="noopener">Spotify</a>
+        <a class="btn" href="https://www.youtube.com/@lennoj" target="_blank" rel="noopener">YouTube</a>
+        <a class="btn" href="https://facebook.com/itsyourboylennoj/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; <span id="yr"></span> Lennoj (Jonnel Alday). Fan-built artist site. Streaming numbers via Spotify.
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Animate bar chart fills + fade-in reveal when the discography section scrolls into view
+  const bars = document.querySelectorAll('.bar-fill');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const el = entry.target;
+        el.style.width = el.dataset.value + '%';
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+  bars.forEach(b => observer.observe(b));
+
+  // Respect reduced-motion: skip all pointer-driven interaction below
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isTouch = window.matchMedia('(pointer: coarse)').matches;
+
+  if(!reduceMotion){
+    // Sparkle glitter layer, like reflections off a disco ball
+    const sparkleLayer = document.getElementById('sparkle-layer');
+    const SPARKLE_COUNT = 45;
+    for(let i=0;i<SPARKLE_COUNT;i++){
+      const s = document.createElement('div');
+      s.className = 'sparkle';
+      const size = (Math.random()*2.4 + 1).toFixed(1);
+      s.style.width = size + 'px';
+      s.style.height = size + 'px';
+      s.style.left = (Math.random()*100) + 'vw';
+      s.style.top = (Math.random()*100) + 'vh';
+      s.style.animationDuration = (2 + Math.random()*4).toFixed(1) + 's';
+      s.style.animationDelay = (Math.random()*5).toFixed(1) + 's';
+      sparkleLayer.appendChild(s);
+    }
+  }
+
+  if(!reduceMotion && !isTouch){
+    // Subtle 3D tilt on museum-style "display" elements, following the cursor
+    const tiltEls = document.querySelectorAll('.stat-card, .bar-row, .chip, .about-photo');
+    tiltEls.forEach(el => {
+      const strength = el.classList.contains('chip') ? 6 : 5;
+      el.addEventListener('mousemove', (e) => {
+        const r = el.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - 0.5;
+        const py = (e.clientY - r.top) / r.height - 0.5;
+        el.style.transform = `perspective(700px) rotateX(${(-py*strength).toFixed(2)}deg) rotateY(${(px*strength).toFixed(2)}deg) translateY(-2px)`;
+      });
+      el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+    });
+
+    // Hero orb drifts opposite the cursor for a floating, parallax depth feel
+    const heroTilt = document.getElementById('hero-tilt');
+    const orbWrap = document.getElementById('hero-orb-wrap');
+    if(heroTilt && orbWrap){
+      heroTilt.addEventListener('mousemove', (e) => {
+        const r = heroTilt.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - 0.5;
+        const py = (e.clientY - r.top) / r.height - 0.5;
+        orbWrap.style.transform = `translate(${(px*-40).toFixed(1)}px, ${(py*-30).toFixed(1)}px)`;
+      });
+      heroTilt.addEventListener('mouseleave', () => { orbWrap.style.transform = ''; });
+    }
+  }
+</script>
+
+</body>
+</html>
