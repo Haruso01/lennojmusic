@@ -283,10 +283,12 @@
   @media (max-width:760px){ .about-grid{grid-template-columns:1fr;} }
   .about-photo{
     aspect-ratio:4/5; background:var(--surface); border:1px solid var(--line);
-    background-image:url('https://i.scdn.co/image/ab67616100005174300f4e63dd6be5e0c45bdb87');
-    background-size:cover; background-position:center top;
-    position:relative;
+    position:relative; overflow:hidden;
     transition:transform .12s ease-out; will-change:transform;
+  }
+  .about-photo img{
+    position:absolute; inset:0; width:100%; height:100%; display:block;
+    object-fit:cover; object-position:center top;
   }
   .about-photo::after{
     content:''; position:absolute; inset:0;
